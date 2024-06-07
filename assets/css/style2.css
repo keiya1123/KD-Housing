@@ -1,0 +1,740 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color:rgba(255, 209, 141, 0.302);
+
+}
+
+/* もういっちょハンバーガーメニュー */
+.header {
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: rgba(255, 209, 141, 0.302);
+  padding: 27px 0;
+    
+}
+.logo {
+  font-weight: 700;
+  padding-left: 50px;
+  font-size: 40px;
+  font-family: serif;
+}
+.hamburger-menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: none;
+  background: transparent;
+  appearance: none;
+  padding: 0;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 99999999;
+}
+.hamburger-menu__bar {
+  display: inline-block;
+  width: 44%;
+  height: 2px;
+  background: #242424;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+.hamburger-menu__bar:first-child {
+  top: 16px;
+}
+.hamburger-menu__bar:nth-child(2) {
+  top: 24px;
+}
+.hamburger-menu__bar:last-child {
+  top: 32px;
+}
+.hamburger-menu--open .hamburger-menu__bar {
+  top: 50%;
+}
+.hamburger-menu--open .hamburger-menu__bar:first-child {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:last-child {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+  display: none;
+}
+.navigation {
+  display: none;
+  background:rgba(255, 209, 141, 0.984);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.navigation__list {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation__list-item {
+  border-bottom: solid 1px #474747;
+}
+.navigation__list-item:first-child {
+  border-top: solid 1px #474747;
+}
+.navigation__link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  padding: 24px 0;
+  transition: .5s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .navigation__link:hover {
+    background: #333;
+  }
+}
+/* もういっちょはここまで */
+
+/* ここからセクション1 */
+.section1{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel-item {
+  width: 100vw; /* 画面の幅いっぱい */
+  height: 95vh; /* 画面の高さいっぱい */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  /* max-width: 100%; */
+  /* object-fit: cover; */
+  /* object-position: 30% 100%; */
+  object-position: right 0px bottom 100px;
+}
+
+p.catchcope{
+  font-size: 35px;
+}
+
+/* ここからセクション2 */
+.section2{
+    width: 100vw;
+    height: 102vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: white; */
+}
+
+.oya001{
+    width: 90vw;
+    height: 100px;
+    /* border: 3px black solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua;  */
+    margin: 40px 0px;
+}
+
+.tokuchou{
+    width: 40vw;
+    height: 10vh;
+    background-color: black;
+    border-radius: 200px;
+    /* margin-right: 100px; */
+    font-size: 37px;
+    /* border:3px black solid; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.section3oowaku2>a>button{
+  width: 20vw;
+  height: 8vh;
+}
+
+.section3oowaku2>a>button:hover{
+  background-color: rgba(251, 224, 183, 0.882);
+}
+
+/* ここから */
+.line-oya{
+  position: relative;
+  width: 30vw;
+  height: 100px;
+  /* background-color: green; */
+  /* border: black 1px solid; */
+  margin-right: 200px;
+}
+.line-1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* 直線の長さ */
+        border-top: 1px solid #000; /* 直線のスタイル */
+border: black 1px solid;
+}
+/* ここまで */
+.sen{
+    width: 50vw;
+    height: 10vh;
+    /* background-color: blue;  */
+    border-radius: 200px;
+    text-align: center;
+    font-size: 60px;
+}
+
+#oya002{
+    width: 90vw;
+    height: 50vh;
+    /* border: 1px gray solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.oyanoyouso{
+    width: 410px;
+    height:39vh;
+    /* border: 1px gray solid; */
+    font-size: 19px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.oyanoyouso-gazou{
+  /* border: 1px gray solid; */
+  width: 20vh;
+  height: 20vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oyanoyouso > img{
+  /* border: 1px gray solid; */
+  width: 20vh;
+  height: 20vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#oya003{
+    width: 90%;
+    height: 50vh;
+    /* border: 1px gray solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 200px;
+}
+
+/* ここからセクション3 */
+.section3{
+    width: 100vw;
+    height: 100vh;
+    /* border: 3px black solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.section3oowaku{
+    width: 90vw;
+    height: 90vh;
+    border: 3px black solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-image: url(./assets/img/pexels-fwstudio-33348-172289.jpg); */
+    border-radius: 200px;
+    background-color: rgb(183, 89, 1);
+}
+
+.jikoshoukai{
+    border: 1px gray solid;
+    /* width: 500px;
+    height: 500px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    margin-left: 100px;
+    /* background-color:rgba(255, 209, 141, 0.302); */
+    background-color: white;
+}
+
+.section3oowaku2{
+    /* border: 1px gray solid; */
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-right: 100px; */
+}
+
+.jikoshoukai1{
+    /* background-color: blue; */
+    /* border: 1px gray solid; */
+    font-size: 50px;
+    line-height: 1.5;
+    color: white;
+}
+
+.jikoshoukai2{
+    /* background-color: red; */
+    /* border: 1px gray solid; */
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+    margin-top: 20px;
+}
+
+.details-button{
+width: 350px;
+height: 500px;
+background-color: white;
+padding: 15px 10px;
+font-size: 20px;
+margin-top: 20px;
+}
+
+/* ここからセクション4 */
+.section4{
+    width: 100vw;
+    height: 103vh;
+    /* border: 1px gray solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#section4-oya001{
+    width: 90%;
+    height: 100px;
+    /* border: 3px black solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.section4-oowaku{
+width: 95vw;
+height: 70vh;
+/* border: 1px gray solid; */
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0px 200px;
+}
+
+.section4-oowaku-1{
+    width: 40vw;
+    height: 70vh;
+    /* border: 1px gray solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sinchiku-img{
+  /* border: 1px gray solid; */
+  width: 35vw;
+  height: 43vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sinchiku{
+  font-size: 50px;
+  /* background-color: rebeccapurple; */
+}
+.section4-oowaku-1>a>button{
+  width: 350px;
+  height: 80px;
+  background-color: white;
+  font-size: 25px;
+  }
+  .section4-oowaku-1>a>button:hover{
+    background-color: rgba(251, 224, 183, 0.882);
+  }
+
+.section4-oowaku-2{
+  width: 40vw;
+  height: 70vh;
+  /* border: 1px gray solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.renovation-img{
+  /* border: 1px gray solid; */
+  width: 35vw;
+  height: 43vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4-oowaku-2>a>button{
+width: 350px;
+height: 80px;
+background-color: white;
+font-size: 22px;
+}
+.section4-oowaku-2>a>button:hover{
+  background-color: rgba(251, 224, 183, 0.882);
+}
+
+#rinobeshon{
+  font-size: 50px;
+}
+
+
+/* こっからセクション5 */
+.section5{
+    width: 100vw;
+    height: 105vh;
+    /* border: 1px gray solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5-1{
+  width: 90%;
+    height: 100px;
+    /* border: 3px black solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua;  */
+    margin-top: 30px;
+}
+
+.sen{
+  width: 50vw;
+  height: 10vh;
+  /* background-color: blue;  */
+  border-radius: 200px;
+  margin-right: 100px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.section5-nidannme{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px gray solid; */
+  /* background-color: aqua; */
+  width: 80vw;
+  height: 85vh;
+  /* padding: 0 30px; */
+}
+
+#sinchiku{
+  font-size: 30px;
+}
+.section5-002-ul >li {
+/* border:  gray 1px solid; */
+width: 30vw;
+height: 20vh;
+}
+.section5-001{
+  /* border: 1px gray solid; */
+  width: 15vw;
+  height: 80vh;
+  /* background-color: red; */
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.section5-002{
+  /* border: 1px gray solid; */
+  width: 30vw;
+  height: 80vh;
+  /* background-color: red; */
+  margin-right: 200px;
+  padding-top: 20px;
+}
+
+.section5-box2 > h1 {
+font-size: 30px;
+}
+
+/* .section5-box2 > p {
+  font-size: 17px;
+  } */
+
+.returnTop>a{
+  margin-left: 140vh;
+  margin-bottom: 100px;
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+
+}
+.returnTop :hover{
+  transform: scale(1.1);
+  font-size: 120%;
+  text-decoration: underline;
+}
+
+  /* ここからfooter */
+footer{
+  display: flex;
+  justify-content: space-around;
+}
+.footer2{
+    width: 100vw;
+    height: 60vh;
+    /* border: 1px gray solid;; */
+    /* background-color: black; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.footer2>h1{
+  height: 20vh;
+  font-size: 80px;
+  padding-top: 10px;
+  /* border: blue 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+}
+
+.menubarLast1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.menubarLast1>li>a{
+height: 10vh;
+display: flex;
+align-items: center;
+font-size: 30px;
+text-decoration: none;
+color: black;
+padding: 0 20px;
+}
+
+.menubarLast1>li>a:hover{
+  border-bottom: 2px solid black;
+}
+
+.menubarLast1{
+  display: flex;
+}
+
+.menubarLast{
+text-decoration: none;
+}
+
+.call-oowaku1{
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.call-oowaku{
+  /* border: green 1px solid; */
+  /* background-color: red; */
+}
+.call{
+  /* background-color: wheat; */
+
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.call>a{
+  text-decoration: none;
+  color: black;
+}
+
+.call>a:hover{
+  color: blue;
+}
+
+.call-oowaku>a>button{
+  width: 15vw;
+  height: 7vh;
+  background-color: white;
+  font-weight: 100;
+}
+
+.call-oowaku>a>button:hover{
+  background-color: rgba(255, 209, 141, 0.302);
+}
+
+.logoLast>h1{
+  width: 30vw;
+  height: 14vh;
+  /* border: 1px gray solid; */
+  font-size: 80px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.instagram{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.instagram>a>img:hover{
+  /* background-color: red; */
+  transform: scale(1.1);
+}
+
+.instagram>h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.instagram>a{
+  margin-top: 25px;
+}
+
+.copyRight{
+  /* border: 1px gray solid; */
+  color: black;
+  width: 100vw;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  /* background-color:rgba(255, 209, 141, 0.302); */
+  /* align-items: flex-end; */
+}
+.lastImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 390px) {
+  img {
+    width: 100%!important;
+  }
+
+  .section1,
+  .section4-oowaku,
+  .section5-nidannme,
+  footer,
+  .menubarLast1 {
+    display: unset;
+  }
+
+  .carousel-item,
+  .carousel-item img {
+    width: 100%!important;
+    height: 300px!important;
+  }
+
+  .section3oowaku,
+  .section2,
+  .section2 * {
+    flex-direction: column!important;
+  }
+
+  .jikoshoukai {
+    margin: auto!important;
+  }
+
+  .jikoshoukai1 {
+    margin-top: 20px;
+  }
+
+  .jikoshoukai1,
+  .jikoshoukai2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .section2,
+  .oya001,
+  #oya002,
+  #oya003,
+  .section4-oowaku,
+  .section4,
+  .section5,
+  .section5-1,
+  .section5-nidannme,
+  .section5-001,
+  .section5-002,
+  .section5-002-ul >li,
+  .footer2,
+  footer *:not(img)  {
+    height: auto!important;
+    width: auto!important;
+  }
+
+  .tokuchou {
+    text-align: center;
+    width: auto;
+    padding: 10px;
+  }
+  .line-oya,
+  .section5-001 img {
+    display: none;
+  }
+
+  .section5-002{
+    margin: auto;
+  }
+
+  * {
+    overflow-x: hidden!important;
+  }
+  
+}
